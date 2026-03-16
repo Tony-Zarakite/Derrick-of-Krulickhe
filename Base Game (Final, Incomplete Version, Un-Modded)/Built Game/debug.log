@@ -33,3 +33,21 @@
 [1109/123726.884:ERROR:settings.cc(325)] Settings version is not 1
 [1109/130357.785:ERROR:settings.cc(325)] Settings version is not 1
 [1109/130631.306:ERROR:settings.cc(325)] Settings version is not 1
+[0316/014523.953:FATAL:sandbox_win.cc(853)] Check failed: 0u == result (0 vs. 31)
+Backtrace:
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A1F4F02+8163906]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A185CC2+7708674]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A193067+7762855]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A193D10+7766096]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A71FE99+13582809]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A71E3B4+13575924]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A0EDA93+7085523]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A11EFDF+7287583]
+	v8::internal::TorqueGeneratedExportedMacrosAssembler::StoreSortStateTempArray [0x00007FFD3A0ED4C8+7084040]
+	ChromeMain [0x00007FFD376711D7+319]
+	Ordinal0 [0x00007FF665E62665+9829]
+	Ordinal0 [0x00007FF665E61992+6546]
+	GetHandleVerifier [0x00007FF665F8E992+825074]
+	BaseThreadInitThunk [0x00007FFE2807E8D7+23]
+	RtlUserThreadStart [0x00007FFE2912C48C+44]
+
